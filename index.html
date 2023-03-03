@@ -8,30 +8,41 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Login -->
-    <form id="login-form" class="hidden">
-      <input id="login-input" type="text" placeholder="What is your name?" />
-      <input type="submit" value="LogIn" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <div class="big">
+      <!-- Login -->
+      <div class="login-box">
+        <form id="login-form" class="hidden">
+          <input
+            id="login-input"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <input type="submit" value="LogIn" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
 
-    <!-- clock -->
-    <h2 id="clock"></h2>
+      <!-- clock -->
+      <div class="clock-box">
+        <h2 id="clock"></h2>
+      </div>
 
-    <!-- todo-list -->
-    <form id="todo-form">
-      <input
-        id="todo-input"
-        type="text"
-        placeholder="What is your goal today?"
-      />
-    </form>
-    <ul id="todo-list"></ul>
+      <!-- weather -->
+      <div id="weather">
+        <span></span><br />
+        <span></span>
+      </div>
 
-    <!-- weather -->
-    <div id="weather">
-      <span></span><br />
-      <span></span>
+      <!-- todo-list -->
+      <form id="todo-form">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="What is your goal today?"
+          size="50"
+        />
+      </form>
+      <ul id="todo-list"></ul>
     </div>
 
     <script src="./js/login.js"></script>

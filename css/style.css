@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;900&display=swap');
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  all: unset;
+  background-color: aquamarine;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+li {
+  margin-bottom: 5px;
+}
+.big {
+  position: relative;
+  top: 180px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hidden {
   display: none;
 }
@@ -12,4 +44,45 @@ img {
   bottom: 0px;
   z-index: -1;
   opacity: 0.9;
+}
+
+input {
+  all: unset;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: rgb(49, 196, 250);
+}
+
+.login-box {
+  position: fixed;
+  top: 30px;
+}
+input[type='submit'] {
+  cursor: pointer;
+  background-color: rgb(125, 222, 255);
+}
+input[type='submit']:hover {
+  background-color: teal;
+  transition: 0.3s;
+}
+input::placeholder {
+  text-align: center;
+  color: rgb(67, 67, 67);
+}
+
+#greeting {
+  font-size: 60px;
+}
+
+#weather {
+  margin-bottom: 20px;
+}
+
+.clock-box {
+  text-align: center;
+  background-color: aliceblue;
+  width: 120px;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
