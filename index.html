@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Graduation Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Login -->
+    <form id="login-form" class="hidden">
+      <input id="login-input" type="text" placeholder="What is your name?" />
+      <input type="submit" value="LogIn" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <!-- clock -->
+    <h2 id="clock"></h2>
+
+    <!-- todo-list -->
+    <form id="todo-form">
+      <input
+        id="todo-input"
+        type="text"
+        placeholder="What is your goal today?"
+      />
+    </form>
+    <ul id="todo-list"></ul>
+
+    <!-- weather -->
+    <div id="weather">
+      <span></span><br />
+      <span></span>
+    </div>
+
+    <script src="./js/login.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/geolocation.js"></script>
+  </body>
+</html>
